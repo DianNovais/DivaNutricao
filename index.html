@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diva Nutrição</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+</head>
+<body>
+    <header id="container-header">
+        <h1 id="marca">Diva Nutrição</h1>
+    </header>
+    <main id="conatiner-main">
+        <h2 id="titulo-page">Meus Clientes</h2>
+        <section id="s-table">
+            <div class="container-filter">
+                <label for="filter">Filtro</label>
+                <input class="filter" type="text" name="filter" id="filter" placeholder="Coloque um nome">
+            </div>
+            <table id="table-page">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Peso</td>
+                        <td>Altura</td>
+                        <td>Gordura</td>
+                        <td>IMC</td>
+                    </tr>
+                </thead>
+                <tbody id="body-table">
+                    <tr id="pacientes">
+                        <td id="tnome">Dian</td>
+                        <td id="tpeso">60</td>
+                        <td id="taltura">0</td>
+                        <td id="tgordura">7</td>
+                        <td id="timc">0</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <button class="button" id="button-table">Importar Cliente</button>
+            <span id="ajax-erro" class="none">Erro ao importar clientes</span>
+        </section>
+        <section id="s-form">
+            <h2 id="#titulo-form">Adicionar clientes</h2>
+            <div id="d-form">
+                <h3>
+                    <form id="form-page">
+                        <div id="container-block">
+                            <div id="grupo">
+                                <label for="nome">Nome</label>
+                                <input name="nome" id="nome" type="text" placeholder="Adicione o nome aqui" class="campo">
+                            </div>
+                        </div>
+                            <div id="container-grupo">
+                                <div id="grupo-medio">
+                                <label for="peso">Peso</label>
+                                <input name="peso" id="peso" type="text" placeholder="Adicione o peso aqui" class="campo medio">
+                                </div>
+                                <div id="grupo-medio">
+                                <label for="altura">Altura</label>
+                                <input name="altura" id="altura" type="text" placeholder="Adicione a altura aqui" class="campo medio">
+                                </div>
+                                <div id="grupo-medio">
+                                <label for="gordura">Gordura</label>
+                                <input name="gordura" id="gordura" type="text" placeholder="Adicione a gordura aqui" class="campo medio">
+                                </div>
+                            </div>
+                            <ul id="aviso"></ul>
+                            <button class="button" id="button-form">Adicionar</button>
+                    </form>
+                </h3>
+            </div>
+        </section>
+
+    </main>
+    <footer id="container-footer">
+
+    </footer>    
+    <script type="text/javascript" src="./assets/js/adicionar.js"></script>
+    <script type="text/javascript" src="./assets/js/calculoimc.js"></script>
+    <script src="./assets/js/remover.js"></script>
+    <script src="./assets/js/filtro.js"></script>
+    <script src="./assets/js/buscar-pacientes.js"></script>
+</body>
+</html>
